@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adedoyin Ahoton - Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav">
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Adedoyin Ahoton</h1>
+                <p class="role">Software Engineer / AI Native Developer</p>
+            <p class="contact-info">Forest Hills, NY 11375 | (347)-450-0557 | ahotonatanda98@gmail.com</p>
+            <div class="hero-buttons">
+                <button id="contact-open" class="btn-primary">Contact Me</button>
+                <button id="contact-email" class="btn-primary" aria-label="Email Now" title="Email Now — opens your mail client" data-mailto="mailto:ahotonatanda98@gmail.com?subject=Hello%20Adedoyin" style="margin-left: .5rem;">Email Now</button>
+                <!-- direct contact popover -->
+                <div id="contact-popover" class="contact-popover" aria-hidden="true">
+                    <a id="sms-link" class="contact-action" href="sms:+13472793758">Send a Text</a>
+                    <a id="email-link" class="contact-action" href="mailto:ahotonatanda98@gmail.com?subject=Hello%20Adedoyin">Send an Email</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="reveal section-accent">
+        <h2>About Me</h2>
+        <p>Motivated and detail-oriented software engineering graduate with hands-on experience in full-stack development through online bootcamps and AI Agent internship. Strong foundational knowledge in modern web technologies and a proven ability to adapt and collaborate in dynamic team environments.</p>
+    </section>
+
+    <section id="skills" class="reveal section-accent">
+        <h2>Technical Skills</h2>
+        <div class="skill-category">
+            <h3>Languages</h3>
+            <p>JavaScript, HTML, CSS, Python</p>
+            <!-- skill bar removed: JavaScript -->
+            <!-- skill bar removed: HTML/CSS -->
+        </div>
+        <div class="skill-category">
+            <h3>Frameworks & Tools</h3>
+            <p>React, Node.js, Express, MongoDB, Git, GitHub</p>
+            <!-- skill bar removed: React -->
+        </div>
+        <div class="skill-category">
+            <h3>Soft Skills</h3>
+            <p>Team Collaboration, Communication, Problem Solving, Time Management</p>
+        </div>
+    </section>
+
+    <section id="experience" class="reveal">
+        <h2>Professional Experience</h2>
+        <div class="job">
+            <h3>Data Annotator / AI Trainer</h3>
+            <p class="company">OUTLIER - Remote (December 2025 - Present)</p>
+        </div>
+        <div class="job">
+            <h3>AI Agent Builder Intern</h3>
+            <p class="company">NEURALSEEK - Remote (Aug 2025 - Sep 2025)</p>
+            <ul>
+                <li>Built an AI agent to automate workflows and enhance business operations using neuralseek</li>
+                <li>Collaborated with cross-functional teams to integrate AI solutions into existing systems</li>
+                <li>Gained hands-on experience with prompt engineering, multi-agent routing, and real-time data handling</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education" class="reveal section-accent">
+        <h2>Education & Certifications</h2>
+        <div class="education-item">
+            <h3>Bachelor of Telecommunications and Computer Science</h3>
+            <p>Université Polytechnique Internationale du Bénin (UPIB) - Oct 2019</p>
+        </div>
+        <div class="certifications">
+            <h3>Certifications</h3>
+            <ul>
+                <li>Multi-Tier AI Agent Architecture - Neuralseek (Sep 2025)</li>
+                <li>Agentic AI for Business - Neuralseek (Sep 2025)</li>
+                <li>AI Agent Foundations - Neuralseek (Aug 2025)</li>
+                <li>Full Stack Web and Mobile Development Bootcamp - Nucamp (May 2024)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="reveal">
+        <h2>Contact</h2>
+        <p>Forest Hills, NY 11375</p>
+        <p>Phone: (347)-450-0557</p>
+        <p>Email: ahotonatanda98@gmail.com</p>
+        <p>
+            <a class="btn-linkedin" aria-label="Open LinkedIn profile in a new tab" href="https://www.linkedin.com/in/adedoyin-ahoton-38b428227/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Adedoyin Ahoton. All rights reserved.</p>
+    </footer>
+    <!-- Contact modal -->
+    <div id="contact-modal" class="modal" aria-hidden="true">
+        <div class="modal-overlay" id="contact-overlay"></div>
+        <div class="modal-content" role="dialog" aria-modal="true">
+            <button class="modal-close" id="contact-close">×</button>
+            <h3>Contact Me</h3>
+            <form id="contact-form">
+                <label>Name<input type="text" name="name" required></label>
+                <label>Email<input type="email" name="email" required></label>
+                <label>Message<textarea name="message" rows="4" required></textarea></label>
+                <button class="btn-primary" type="submit">Send</button>
+            </form>
+            <p class="modal-note">Or email: ahotonatanda98@gmail.com</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
